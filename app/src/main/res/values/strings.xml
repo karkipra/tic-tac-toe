@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">TicTacToe</string>
     <string name="Reset">Reset</string>
+    <string name="Cross">Cross is Playing!</string>
+    <string name="Circle">Circle is Playing!</string>
+    <string name="Undo">Undo Last Move</string>
+
 </resources>
