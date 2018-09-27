@@ -32,7 +32,15 @@ class MainActivity : AppCompatActivity() {
 
 
     fun showMessage(msg: String) {
-        Snackbar.make(ticTacToeView, msg, Snackbar.LENGTH_LONG).show()
+        Snackbar.make(ticTacToeView, msg, Snackbar.LENGTH_LONG).setAction(R.string.Reset){
+            TicTacToeModel.checker = true
+
+            ticTacToeView.restart()
+        }.show()
+
+
+
+
         //Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
     }
 

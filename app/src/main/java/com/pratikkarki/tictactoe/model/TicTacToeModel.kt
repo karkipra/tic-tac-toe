@@ -83,7 +83,7 @@ object TicTacToeModel {  // "Object" automatically makes it a singleton
             w = 2
         } else if (model[i][j + 1] == cross && model[i + 1][j + 1] == cross && model[i + 2][j + 1] == cross) {
             w = 2
-        } else if (model[i + 1][j] == cross && model[i + 1][j + 1] == cross && model[i + 1][j + 1] == cross) {
+        } else if (model[i + 1][j] == cross && model[i + 1][j + 1] == cross && model[i + 1][j + 2] == cross) {
             w = 2
         }
 
@@ -106,7 +106,7 @@ object TicTacToeModel {  // "Object" automatically makes it a singleton
             w = 1
         } else if (model[i][j + 1] == circle && model[i + 1][j + 1] == circle && model[i + 2][j + 1] == circle) {
             w = 1
-        } else if (model[i + 1][j] == circle && model[i + 1][j + 1] == circle && model[i + 1][j + 1] == circle) {
+        } else if (model[i + 1][j] == circle && model[i + 1][j + 1] == circle && model[i + 1][j + 2] == circle) {
             w = 1
         }
 

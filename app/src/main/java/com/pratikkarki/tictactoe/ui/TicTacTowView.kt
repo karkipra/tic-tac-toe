@@ -131,7 +131,14 @@ class TicTacTowView(context: Context?, attrs: AttributeSet?) : View(context, att
                 TicTacToeModel.changeNextPlayer()
 
                 val winner = TicTacToeModel.win()
-                (context as MainActivity).undo("Undo")
+
+                if(TicTacToeModel.getNextPlayer() == TicTacToeModel.CROSS){
+                    (context as MainActivity).undo("Circle Made a Move")
+                } else {
+                    (context as MainActivity).undo("Cross Made a Move")
+                }
+
+
 
                 if (winner == TicTacToeModel.CROSS) {
                     (context as MainActivity).showMessage("Cross has won!")
